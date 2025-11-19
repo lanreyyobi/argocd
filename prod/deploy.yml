@@ -5,7 +5,7 @@ metadata:
   labels:
     app: wema
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: wema
@@ -16,5 +16,6 @@ spec:
     spec:
       containers:
         - name: kubenginx
-          image: wemadevops/kubenginx:2.0.0
+          image: wemadevops/kubenginx:4.0.0
           resources: {}
+
